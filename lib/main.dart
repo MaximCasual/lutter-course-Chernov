@@ -86,7 +86,7 @@ Widget task1() {
     'Это очень длинный заголовок, который не поместится в одну строку и будет обрезан, но тут я понял, что он все равно еще короткий и весь текст помещается в одну строку <3',
     maxLines: 1,
     overflow: TextOverflow.ellipsis,
-    style: TextStyle( fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black,));
+    style: TextStyle( fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black,));
 }
 
 // 2. Подпись — небольшой, нежирный курсивный текст белого цвета, обрезается в две строки.
@@ -107,7 +107,7 @@ Widget task2() {
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            fontSize: 14,
+            fontSize: 12,
             fontStyle: FontStyle.italic,
             fontWeight: FontWeight.normal,
             color: Colors.white,
@@ -122,14 +122,14 @@ Widget task2() {
 // с применением цвета и размером.
 Widget task3() {
   // TODO: замените Placeholder на...
-  return const Icon(Icons.star, color: Colors.amber, size: 48);
+  return const Icon(Icons.star, color: Colors.amber, size: 24);
 }
 
 // 4. Кнопка с иконкой избранного — большая иконка сердца красного цвета без фона.
 // При нажатии пишет в консоль "Вы добавили в избранное"
 Widget task4() {
   // TODO: замените Placeholder на ...
-  return IconButton(iconSize: 48, color: Colors.red, icon: const Icon(Icons.favorite),onPressed: () {debugPrint('Вы добавили в избранное');});
+  return IconButton(iconSize: 24, color: Colors.red, icon: const Icon(Icons.favorite),onPressed: () {debugPrint('Вы добавили в избранное');});
 }
 
 // 5. Кнопка «Подробнее» — кнопка с текстом и обводкой, при нажатии пишет в консоль "Узнать детали"
